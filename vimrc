@@ -6,6 +6,7 @@ endif
 call pathogen#infect()
 call pathogen#helptags()
 color andrew
+
 set fillchars=stl:─,stlnc:─,vert:\│
 set number
 set scrolloff=0
@@ -15,6 +16,8 @@ set clipboard=unnamed,unnamedplus
 
 inoremap <c-p> <esc>pa
 cnoremap <c-p> <c-r>"
+
+nnoremap gn :NERDTreeToggle<cr>
 
 nnoremap vv ^vg_
 nnoremap Y y$
@@ -30,3 +33,13 @@ nnoremap gl <c-w>l
 nnoremap gh <c-w>h
 
 nnoremap ! :source %<cr>
+
+nmap w <Plug>(smartword-w)
+nmap b <Plug>(smartword-b)
+nmap e <Plug>(smartword-e)
+nmap ge <Plug>(smartword-ge)
+
+xmap w <Plug>(smartword-w)
+xmap b <Plug>(smartword-b)
+xmap e <Plug>(smartword-e)
+xmap ge <Plug>(smartword-ge)
