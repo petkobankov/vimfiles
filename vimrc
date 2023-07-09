@@ -7,6 +7,7 @@ call pathogen#infect()
 call pathogen#helptags()
 color andrew
 
+set guifont=Consolas:h15
 set fillchars=stl:─,stlnc:─,vert:\│
 set number
 set scrolloff=0
